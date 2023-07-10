@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/containerDefaultResourceLimit: '{}'
+    field.cattle.io/projectId: local:p-9g5ht
+    field.cattle.io/resourceQuota: '{"limit" : {} }'
+    lifecycle.cattle.io/create.namespace-auth: "true"
+  finalizers:
+    - controller.cattle.io/namespace-auth
+  labels:
+    field.cattle.io/projectId: p-9g5ht
+  name: postgres
+spec:
+  finalizers:
+    - kubernetes
