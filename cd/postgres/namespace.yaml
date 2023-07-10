@@ -3,13 +3,13 @@ kind: Namespace
 metadata:
   annotations:
     field.cattle.io/containerDefaultResourceLimit: '{}'
-    field.cattle.io/projectId: local:p-9g5ht
+    field.cattle.io/projectId: local:p-n79mq
     field.cattle.io/resourceQuota: '{"limit" : {} }'
     lifecycle.cattle.io/create.namespace-auth: "true"
   finalizers:
     - controller.cattle.io/namespace-auth
   labels:
-    field.cattle.io/projectId: p-9g5ht
+    field.cattle.io/projectId: p-n79mq
   name: postgres
 spec:
   finalizers:
