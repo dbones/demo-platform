@@ -4,10 +4,12 @@ metadata:
   labels:
     app: db
   name: db
+  namespace: postgres
 spec:
+  type: ClusterIP
   ports:
   - name: "db-service"
     port: 5432
     targetPort: 5432
-  type: ExternalName
-    externalName: db.postgres.svc.cluster.local
+  selector:
+    app: db
